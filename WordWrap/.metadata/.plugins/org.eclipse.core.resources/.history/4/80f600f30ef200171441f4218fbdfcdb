@@ -1,0 +1,36 @@
+package UnitTests;
+
+import static org.junit.Assert.*;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+import main.Wrapper;
+
+@RunWith(Suite.class)
+@Suite.SuiteClasses({
+	WrapperTests.DegenerateTests.class,
+	WrapperTests.SplitWordsTests.class
+})
+
+public class WrapperTests {
+	public static class DegenerateTests {
+
+		@Test
+		public void wrap_EmptyString_ShouldBeEmpty() throws Exception {
+			assertEquals(Wrapper.wrap("", 1), "");
+		}
+
+		@Test
+		public void stringShorterThanColDoesNotWrap() throws Exception {
+			assertEquals(Wrapper.wrap("word", 10), "word");
+		}
+	}
+
+	public static class SplitWordsTests {
+
+		@Test
+		public void splitOneWord() throws Exception {
+			assertEquals(Wrapper.wrap("word", 2), "wo\nrd");
+		}
+	}
+}

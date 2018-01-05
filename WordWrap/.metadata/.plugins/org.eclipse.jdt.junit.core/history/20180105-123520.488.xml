@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="WrapperTests" project="WordWrap" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="UnitTests.WrapperTests" time="0.001">
+    <testsuite name="UnitTests.WrapperTests.DegenerateTests" time="0.001">
+      <testcase name="stringShorterThanColDoesNotWrap" classname="UnitTests.WrapperTests.DegenerateTests" time="0.001"/>
+      <testcase name="wrap_EmptyString_ShouldBeEmpty" classname="UnitTests.WrapperTests.DegenerateTests" time="0.0"/>
+    </testsuite>
+  </testsuite>
+</testrun>

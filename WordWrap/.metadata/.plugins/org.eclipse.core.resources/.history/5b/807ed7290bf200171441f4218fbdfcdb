@@ -1,0 +1,26 @@
+package UnitTests;
+import static org.junit.Assert.*;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+
+@RunWith(Suite.class)
+@Suite.SuiteClasses({
+	WrapperTests.DegenerateTests.class,
+//	WrapperTests.wrapWordsTest.class
+})
+
+public class WrapperTests {
+	public static class DegenerateTests {
+
+		@Test
+		public void wrap_EmptyString_ShouldBeEmpty() throws Exception {
+			assertThat(wrap("", 1), equalTo(""));
+		}
+
+		@Test
+		public void stringShorterThanColDoesNotWrap() throws Exception {
+			assertThat()
+		}
+	}
+}

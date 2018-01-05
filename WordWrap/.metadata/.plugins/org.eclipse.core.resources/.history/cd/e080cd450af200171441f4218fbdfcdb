@@ -1,0 +1,14 @@
+package UnitTests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class DegenerateTests {
+
+	@Test
+	public void wrap_EmptyString_ShouldBeEmpty() throws Exception{
+		assertThat(wrap("", 1), equalTo(""));
+	}
+
+}

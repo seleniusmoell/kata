@@ -1,0 +1,15 @@
+package main;
+
+public class Wrapper {
+	public static String wrap(String s, int col) {
+		
+		if(s.length() <= col) 
+			return s; 
+		else {
+			
+			
+		}
+		
+	}
+	
+}

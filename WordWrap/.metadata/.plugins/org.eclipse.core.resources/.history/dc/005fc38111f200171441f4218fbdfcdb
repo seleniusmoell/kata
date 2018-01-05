@@ -1,0 +1,13 @@
+package main;
+
+public class Wrapper {
+	public static String wrap(String s, int col) {
+		
+		if(s.length() <= col) 		
+			return s; 	
+		else 
+			return (s.substring(0, col) + "\n" + wrap(s.substring(col), col));
+		
+	}
+	
+}

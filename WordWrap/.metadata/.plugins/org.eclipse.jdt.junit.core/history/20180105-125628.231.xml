@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="WrapperTests" project="WordWrap" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="UnitTests.WrapperTests" time="0.0">
+    <testsuite name="UnitTests.WrapperTests.DegenerateTests" time="0.0">
+      <testcase name="stringShorterThanColDoesNotWrap" classname="UnitTests.WrapperTests.DegenerateTests" time="0.0"/>
+      <testcase name="wrap_EmptyString_ShouldBeEmpty" classname="UnitTests.WrapperTests.DegenerateTests" time="0.0"/>
+    </testsuite>
+    <testsuite name="UnitTests.WrapperTests.SplitWordsTests" time="0.0">
+      <testcase name="splitOneWord" classname="UnitTests.WrapperTests.SplitWordsTests" time="0.0"/>
+      <testcase name="splitOneWordManyTimes" classname="UnitTests.WrapperTests.SplitWordsTests" time="0.0"/>
+    </testsuite>
+  </testsuite>
+</testrun>
