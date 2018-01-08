@@ -50,5 +50,15 @@ public class WrapperTests {
 		public void wrapAfterWordBoundary() throws Exception {
 			assertEquals("word\nword", Wrapper.wrap("word word", 6));
 		}
+		
+		@Test
+		public void wrapJustBeforeBondary() throws Exception {
+			assertEquals("word\nword", Wrapper.wrap("word word", 4));
+		}
+		
+		@Test
+		public void wrapWellBeforeBondary() throws Exception {
+			assertEquals("wo\nrd", Wrapper.wrap("word", 2));
+		}
 	}
 }
